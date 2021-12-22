@@ -22,3 +22,22 @@ const navSlide = () => {
  
 }
  navSlide();
+
+
+ const slide = () =>{
+const signinBtn=document.querySelector('.signinBtn');
+const signupBtn=document.querySelector('.signupBtn');
+const formBx=document.querySelector('.formBx');
+const login_register=document.querySelector('.login_register');
+
+signupBtn.onclick=function(){
+    formBx.classList.add('active');
+    login_register.classList.add('active');
+}
+signinBtn.onclick=function(){
+    formBx.classList.remove('active');
+    login_register.classList.remove('active');
+ }
+}
+
+slide();
